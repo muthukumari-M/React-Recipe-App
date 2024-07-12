@@ -3,7 +3,7 @@ function New()
 {
     return(
         <div>
-            <h1 className='bg-blue-200'>Iam Muthu</h1>
+            <h1 className='text-3xl font-bold underline'>Iam Muthu</h1>
         </div>
         
     )
