@@ -2,6 +2,8 @@ import React,{useState} from 'react';
 import Recipetile from './Components/Recipetile'
 import Axios from 'axios';
 import './App.css'
+import New from './Components/New'
+
 
 function App()
 {
@@ -27,6 +29,7 @@ const url= `https://api.edamam.com/search?q=${query}&app_id=${YOUR_APP_ID}&app_k
   }
   return(
     <div className='app'>
+      
       <h1 onClick={getRecipeInfo}>
         <u>Food Recipe Hub </u>🍚</h1>
       <form className="app-SearchForm" onSubmit={onSubmit}>
@@ -48,7 +51,9 @@ const url= `https://api.edamam.com/search?q=${query}&app_id=${YOUR_APP_ID}&app_k
           return <Recipetile recipe={recipe}/>
         })}
       </div>
+      <New/>
     </div>
+ 
   )
 }
 export default App
